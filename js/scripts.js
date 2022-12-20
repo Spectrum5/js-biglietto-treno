@@ -21,17 +21,17 @@ if(Number(age) && Number(distance)){
     
     if(age < 18){
         alert(`E' previsto uno sconto del 20%`);
-        priceTicket = `Il costo del ticket e': ` + Math.round(((distance * priceForKm) * 0.8) * 100) / 100 + `€`;
+        priceTicket = `` + Math.round(((distance * priceForKm) * 0.8) * 100) / 100 + `€`;
         console.log(priceTicket);
     }
     else if(age >= 65){
         alert(`E' previsto uno sconto del 40%`);
-        priceTicket = `Il costo del ticket e': ` + Math.round(((distance * priceForKm) * 0.6) * 100) / 100 + `€`;
+        priceTicket = `` + Math.round(((distance * priceForKm) * 0.6) * 100) / 100 + `€`;
         console.log(priceTicket);
     }
     else{
         alert(`Non e' previsto sconto`);
-        priceTicket = `Il costo del ticket e': ` + Math.round((distance * priceForKm) * 100) / 100 + `€`;
+        priceTicket = `` + Math.round((distance * priceForKm) * 100) / 100 + `€`;
         console.log(priceTicket);
     }
 } 

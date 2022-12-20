@@ -1,0 +1,60 @@
+/* REGOLE GENERALI */
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url(../img/bg-train.jpg);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* credit card */
+.train-card {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(53, 97, 243, 0.76);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    border: 3px solid rgb(247, 133, 20);
+}
+
+.card-contain {
+    text-align: center;
+}
+
+/* animation */
+.train-card{
+    animation: animation-y 1s alternate infinite ;
+}
+@keyframes animation-y{
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        top: 45%;
+        left:50%;  
+    }
+}
